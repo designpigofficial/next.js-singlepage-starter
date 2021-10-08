@@ -1,16 +1,16 @@
 # Next.js Single-page Starter
 
-This template uses [Tailwind CSS](https://tailwindcss.com/) [(v2.2)] with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This template uses [Tailwind CSS](https://tailwindcss.com/) [(v2.2)] with Next.js It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
 It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
 It is mostly unstyled and is intended for use as a boilerplate to save time on setup.
 
-It features 4 commonly-named sections, each of full-screen size, which can be edited, removed, renamed, or expanded upon.
+It features 4 commonly-named sections, each of full-screen size, which can be edited, removed, renamed, or expanded upon. The sections are components which are imported into the index.js file.
 
 The navigation is collapsed to a hamburger menu on screen sizes which are smaller than 'large' screen. This can also be changed by adjusting the Tailwind utility classes. The sliding menu side-bar is animated and is customizable.
 
-The animations are made with the Framer-Motion API.
+The animations are made using the Framer-Motion API.
 
 The FadeUp Component is triggered on-scroll using the react-intersection-observer (<https://www.npmjs.com/package/react-intersection-observer>), and can be wrapped around HTML elements to Fade Up into view upon entering the viewport. It can be further customized by following the Framer-Motion documentation.
 (<https://www.framer.com/docs/>)
