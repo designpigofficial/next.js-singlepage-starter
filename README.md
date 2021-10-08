@@ -1,29 +1,36 @@
-# Next.js + Tailwind CSS Example
+# Next.js Single-page Starter
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v2.2)](https://blog.tailwindcss.com/tailwindcss-2-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+This template uses [Tailwind CSS](https://tailwindcss.com/) [(v2.2)] with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
 It uses the new [`Just-in-Time Mode`](https://tailwindcss.com/docs/just-in-time-mode) for Tailwind CSS.
 
-## Preview
+It is mostly unstyled and is intended for use as a boilerplate to save time on setup.
 
-Preview the example live on [StackBlitz](http://stackblitz.com/):
+It features 4 commonly-named sections, each of full-screen size, which can be edited, removed, renamed, or expanded upon.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+The navigation is collapsed to a hamburger menu on screen sizes which are smaller than 'large' screen. This can also be changed by adjusting the Tailwind utility classes. The sliding menu side-bar is animated and is customizable.
 
-## Deploy your own
+The animations are made with the Framer-Motion API.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+The FadeUp Component is triggered on-scroll using the react-intersection-observer (<https://www.npmjs.com/package/react-intersection-observer>), and can be wrapped around HTML elements to Fade Up into view upon entering the viewport. It can be further customized by following the Framer-Motion documentation.
+(<https://www.framer.com/docs/>)
 
 ## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+Click on "Use this template" above the file list on the main page of this repository and follow the steps outlined. Alternatively, follow these instructions:
+(<https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template>)
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-# or
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## List of dependencies:
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+-prod:
+@heroicons/react@1.0.4
+framer-motion@4.1.17
+next@11.1.2
+react-dom@17.0.2
+react-intersection-observer@8.32.1
+react@17.0.2
+
+-dev:
+autoprefixer@10.3.6
+postcss@8.3.8
+tailwindcss@2.2.16
