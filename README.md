@@ -19,7 +19,7 @@ The FadeUp Component is triggered on-scroll using the react-intersection-observe
 
 CD into your directory of choice and run the following command:
 
-npx create-next-app [your-project-name] -e https://github.com/EMurrell/next.js-singlepage-starter
+npx create-next-app [your-project-name] -e `https://github.com/EMurrell/next.js-singlepage-starter`
 
 ...And once the files have been downloaded, cd into the directory and run:
 
