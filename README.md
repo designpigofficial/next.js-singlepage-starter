@@ -12,13 +12,29 @@ The navigation is collapsed to a hamburger menu on screen sizes which are smalle
 
 The animations are made using the Framer-Motion API.
 
-The FadeUp Component is triggered on-scroll using the react-intersection-observer (<https://www.npmjs.com/package/react-intersection-observer>), and can be wrapped around HTML elements to Fade Up into view upon entering the viewport. It can be further customized by following the Framer-Motion documentation.
+The FadeUp Component is triggered on-scroll using the react-intersection-observer (<https://www.npmjs.com/package/react-intersection-observer>), and can be wrapped around HTML elements to "Fade Up" into view upon entering the viewport. It can be further customized by following the Framer-Motion documentation.
 (<https://www.framer.com/docs/>)
 
 ## How to use
 
-Click on "Use this template" above the file list on the main page of this repository and follow the steps outlined. Alternatively, follow these instructions:
-(<https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template>)
+CD into your directory of choice and run the following command:
+
+npx create-next-app [your-project-name] -e https://github.com/EMurrell/next.js-singlepage-starter
+
+...And once the files have been downloaded, cd into the directory and run:
+
+npm install
+
+Now run:
+
+npm run dev
+
+...to start up your development server, which can be viewed in the browser at:
+
+localhost:3000
+
+You now have a next.js app which is configured with navigation and animation scaffolding.
+For further information please see the official docs at <https://nextjs.org/docs>
 
 ## List of dependencies:
 
