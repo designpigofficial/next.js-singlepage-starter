@@ -39,7 +39,7 @@ export default function Nav() {
     <nav className="flex justify-between w-full font-sans bg-gray-100 ">
       {/* Logo or company Name */}
       <div className="inline-flex p-5 text-xl font-semibold lg:text-2xl lg:pl-4">
-        YOUR COMPANY
+        &lt;/designpig&gt;
       </div>
 
       {/* The Side Bar Menu for screens smaller than 'Large' */}
