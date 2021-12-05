@@ -8,7 +8,7 @@ export default function Home() {
       className="flex justify-center w-full h-screen p-5 font-sans "
     >
       <FadeUp>
-        <h1 className="pt-12 text-5xl">HOME</h1>
+        <h1 className="pt-12 text-lg">smoke weed everyday</h1>
       </FadeUp>
     </section>
   );

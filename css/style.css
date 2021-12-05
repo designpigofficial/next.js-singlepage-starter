@@ -1,0 +1,34 @@
+
+
+body{
+    color: #FFFEFF;
+    background: #0D0700;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #fffeff;        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #0d0700;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #fffeff;  /* creates padding around scroll thumb */
+  }
+
+.myBrown{
+    color: #0d0700;
+}
+
+.myPink{
+    color: #FFFEFF;
+}
+
+.myOtherPink{
+    color: pink;
+}
+
+

@@ -4,10 +4,10 @@ import { AnimatePresence, motion, useCycle } from "framer-motion";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const links = [
-  { name: "HOME", to: "#Home", id: 1 },
-  { name: "ABOUT", to: "#About", id: 2 },
-  { name: "WORK", to: "#Work", id: 3 },
-  { name: "CONTACT", to: "#Contact", id: 4 },
+  { name: "about", to: "#Home", id: 1 },
+  { name: "work", to: "#About", id: 2 },
+  { name: "projects", to: "#Work", id: 3 },
+  { name: "contact", to: "#Contact", id: 4 },
 ];
 
 const itemVariants = {
@@ -36,17 +36,17 @@ export default function Nav() {
   const [open, cycleOpen] = useCycle(false, true);
 
   return (
-    <nav className="flex justify-between w-full font-sans bg-gray-100 ">
+    <nav className="flex justify-between w-full font-sans bg-transparent ">
       {/* Logo or company Name */}
       <div className="inline-flex p-5 text-xl font-semibold lg:text-2xl lg:pl-4">
-        &lt;/designpig&gt;
+        &lt;/design<span className="myOtherPink">pig</span>&gt;
       </div>
 
       {/* The Side Bar Menu for screens smaller than 'Large' */}
       <AnimatePresence>
         {open && (
           <motion.aside
-            className="fixed right-0 h-screen bg-gray-300 lg:hidden "
+            className="fixed right-0 h-screen bg-pink-100 lg:hidden "
             initial={{ width: 0 }}
             animate={{
               width: 200,
@@ -67,7 +67,7 @@ export default function Nav() {
                 <motion.a
                   key={id}
                   href={to}
-                  className="mx-12 my-12 text-xl text-gray-800 transition duration-100 ease-in-out transform hover:text-blue-400 hover:scale-105"
+                  className="mx-12 my-12 text-xl text-gray-800 transition duration-100 ease-in-out transform hover:text-black hover:scale-105"
                   variants={itemVariants}
                   onClick={cycleOpen}
                   aria-current={links.current ? "page" : undefined}
@@ -90,7 +90,7 @@ export default function Nav() {
               aria-hidden="true"
             />
           ) : (
-            <MenuIcon className="w-6 h-6 text-gray-800 " aria-hidden="true" />
+            <MenuIcon className="w-6 h-6 text-myPink " aria-hidden="true" />
           )}
         </button>
       </div>
@@ -101,7 +101,7 @@ export default function Nav() {
           <a
             key={id}
             href={to}
-            className="px-6 py-5 text-xl text-gray-800 transition duration-100 ease-in-out transform hover:text-blue-400 hover:scale-105"
+            className="px-6 py-5 text-xl text-myBrown transition duration-100 ease-in-out transform hover:text-pink-100 hover:scale-105"
           >
             {name}
           </a>
